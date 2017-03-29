@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>Articles</title>
+	<link rel="stylesheet" href="articles_style.css" content="text/css" />
+	<script type="text/javascript" language="JavaScript" src="articles_script.js"></script>
+	<script type="text/javascript" language="JavaScript">
+	
+	function sbmt()
+	{
+		if(clck == 0)
+		{
+			if((document.article.ans1.value=="")||(document.article.ans2.value=="")||(document.article.ans3.value=="")||(document.article.ans4.value=="")||(document.article.ans5.value=="")||(document.article.ans6.value=="")||(document.article.ans7.value=="")||(document.article.ans8.value=="")||(document.article.ans9.value=="")||(document.article.ans10.value==""))
+			alert("Please Fill All Answer");
+			else
+			{
+				if(document.article.ans1.value == "a")
+				document.article.ans1.className="dash rght";
+				else
+				document.article.ans1.className="dash wrng";
+				if(document.article.ans2.value == "the")
+				document.article.ans2.className="dash rght";
+				else
+				document.article.ans2.className="dash wrng";
+				if(document.article.ans3.value == "a")
+				document.article.ans3.className="dash rght";
+				else
+				document.article.ans3.className="dash wrng";
+				if(document.article.ans4.value == "a")
+				document.article.ans4.className="dash rght";
+				else
+				document.article.ans4.className="dash wrng";
+				if(document.article.ans5.value == "The")
+				document.article.ans5.className="dash rght";
+				else
+				document.article.ans5.className="dash wrng";
+				if(document.article.ans6.value == "the")
+				document.article.ans6.className="dash rght";
+				else
+				document.article.ans6.className="dash wrng";
+				if(document.article.ans7.value == "the")
+				document.article.ans7.className="dash rght";
+				else
+				document.article.ans7.className="dash wrng";
+				if(document.article.ans8.value == "a")
+				document.article.ans8.className="dash rght";
+				else
+				document.article.ans8.className="dash wrng";
+				if(document.article.ans9.value == "the")
+				document.article.ans9.className="dash rght";
+				else
+				document.article.ans9.className="dash wrng";
+				if(document.article.ans10.value == "the")
+				document.article.ans10.className="dash rght";
+				else
+				document.article.ans10.className="dash wrng";
+				
+				clck = 1;
+				document.article.rslt.src="next.gif";
+				ovrimg="nextovr.gif";
+				nrmimg="next.gif";	
+				document.article.rsltbt.accessKey="n";
+			}
+		}
+		else
+		{
+		   nxt.click();
+		}
+		
+	}
+		
+	</script>
+</head>
+<body onload="document.article.ans1.focus();">
+<form name="article">
+<table width="65%">	
+<tr><td>
+	<img src="line.gif" width="850px" height="10px" /><br />
+	<div align="center"><img src="vighneshbalaji.gif" width="150px" height="60px" title="Created By Vighneshbalaji" /></div>
+	<div align="center"><img src="title.gif" width="300px" height="50px" title="Created By Vighneshbalaji" /></div>
+	<img src="line.gif" width="850px" height="10px" />
+</td></tr>	
+<tr><td>
+<p style="font-size:16pt; line-height:35px; text-align:justify; font-family:arial black;">
+I am living in <input type="text" size="5" name="ans1" id="ans1" tabindex="1"  class="dash" /> village.
+The name of <input type="text" size="5" name="ans2" id="ans2" tabindex="2" class="dash"  onfocus= "chck(ans1);"/> village is maniatchi.
+I go to <input type="text" size="5" name="ans3" tabindex="3" class="dash"  onfocus= "chck(ans2);" /> school which is located two kilometers from my village.
+On the way their is <input type="text"  size="5" name="ans4" tabindex="4" class="dash"  onfocus= "chck(ans3);" /> bridge for about seven hundred and fifty meters.
+<input type="text" size="5" name="ans5" tabindex="5" class="dash" onfocus= "chck(ans4);" /> school begins at 9:30 AM.
+I always enter <input type="text" size="5" name="ans6" tabindex="6" class="dash" onfocus= "chck(ans5);" /> school via
+<input type="text" size="5" name="ans7" tabindex="7" class="dash" onfocus= "chck(ans6);" /> main gate on the eastern side.
+Our head master is very sirecet person. 
+The gate will be closed on time, So I always hurry up.
+I requested my father to buy me <input type="text" size="5" name="ans8" tabindex="8" class="dash" onfocus= "chck(ans7);" /> bicycle.
+My father agreed but on <input type="text" size="5" name="ans9" tabindex="9" class="dash" onfocus= "chck(ans8);" /> condition that I passed my annual exams.
+I started to prepare for <input type="text" size="5" name="ans10" tabindex="10" class="dash" onfocus= "chck(ans9);" /> exams day and night.
+One by one my exams got overed. I did my exams well next here. I will go to school by bicycle.
+Now I know that hard work will beear sweet fruits.<br />
+</p></td></tr>
+<tr><td>
+<div align="center"><button type="button" style="border:0px; background-color:ivory;" name="rsltbt" id="rsltbt" tabindex="11" onfocus="chck(ans10)" accesskey="s" onmouseover="ovr(1);" onmouseout="ovr(0)" onclick="sbmt();"><img name="rslt" id="rslt" src="submit.gif"/></button> </div>
+<a name="nxt" id="nxt" href="articles1.html"></a>
+</td></tr>
+</table>
+</form>
+</body>
+</html>

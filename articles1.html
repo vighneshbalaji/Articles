@@ -1,0 +1,80 @@
+<html>
+<head>
+	<style>
+	.wrng{color:red; font-size:15pt; font-weight:bold;}
+	.rght{color:green; font-size:15pt; font-weight:bold;}
+	</style>
+	<script language="JavaScript">
+	function sbmt()
+	{
+		if((document.article.ans1.value=="")||(document.article.ans2.value=="")||(document.article.ans3.value=="")||(document.article.ans4.value=="")||(document.article.ans5.value=="")||(document.article.ans6.value=="")||(document.article.ans7.value=="")||(document.article.ans8.value=="")||(document.article.ans9.value=="")||(document.article.ans10.value==""))
+		alert("Please Fill All Answer");
+		else
+		{
+			if(document.article.ans1.value == "a")
+			document.article.ans1.className="rght";
+			else
+			document.article.ans1.className="wrng";
+			if(document.article.ans2.value == "the")
+			document.article.ans2.className="rght";
+			else
+			document.article.ans2.className="wrng";
+			if(document.article.ans3.value == "a")
+			document.article.ans3.className="rght";
+			else
+			document.article.ans3.className="wrng";
+			if(document.article.ans4.value == "a")
+			document.article.ans4.className="rght";
+			else
+			document.article.ans4.className="wrng";
+			if(document.article.ans5.value == "The")
+			document.article.ans5.className="rght";
+			else
+			document.article.ans5.className="wrng";
+			if(document.article.ans6.value == "the")
+			document.article.ans6.className="rght";
+			else
+			document.article.ans6.className="wrng";
+			if(document.article.ans7.value == "the")
+			document.article.ans7.className="rght";
+			else
+			document.article.ans7.className="wrng";
+			if(document.article.ans8.value == "a")
+			document.article.ans8.className="rght";
+			else
+			document.article.ans8.className="wrng";
+			if(document.article.ans9.value == "the")
+			document.article.ans9.className="rght";
+			else
+			document.article.ans9.className="wrng";
+			if(document.article.ans10.value == "the")
+			document.article.ans10.className="rght";
+			else
+			document.article.ans10.className="wrng";
+			
+		}
+	}
+	</script>
+</head>
+<body>
+<form name="article">
+<p>
+I am living in <input type="text" size="5" name="ans1" style="border:1px;" class="" /> village.
+The name of <input type="text" size="5" name="ans2" class="" style="border:0px;" /> village is maniatchi.
+I go to <input type="text" size="5" name="ans3" class="" style="border:0px;" /> school which is located two kilometers from my village.
+On the way their is <input type="text" size="5" name="ans4" class="" style="border:0px;" /> bridge for about seven hundred and fifty meters.
+<input type="text" size="5" name="ans5" class="" style="border:0px;" /> school begins at 9:30 AM.
+I always enter <input type="text" size="5" name="ans6" class="" style="border:0px;" /> school via <input type="text" size="5" name="ans7" class="" style="border:0px;" /> main gate on the eastern side.
+Our head master is very sirecet person. 
+The gate will be closed on time, So i always hurry up.
+I requested my father to buy me <input type="text" size="5" name="ans8" class="" style="border:0px;" /> bicycle.
+My father agreed but on <input type="text" size="5" name="ans9" class="" style="border:0px;" /> condition that i passed my annual exams.
+I started to prepare for <input type="text" size="5" name="ans10" class="" style="border:0px;" /> exams day and night.
+One by one my exams got overed. i did my exams well next here i will go to school by bicycle.
+now i know that hard work will beear sweet fruits.
+<input type="button" name="submt" value="Submit" onclick="sbmt();" />
+
+</p>
+</form>
+</body>
+</html>

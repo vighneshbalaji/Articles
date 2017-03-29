@@ -1,0 +1,4 @@
+	body{background-color:ivory; margin-left:2%;}
+	.wrng{color:red; font-size:15pt; font-weight:bold;}
+	.rght{color:green; font-size:15pt; font-weight:bold;}
+	.dash{font-size:16pt; border-bottom:2px solid; border-top:0px; border-left:0px; border-right:0px;text-align:center;}
